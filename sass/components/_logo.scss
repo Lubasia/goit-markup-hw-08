@@ -1,0 +1,49 @@
+.logo-link {
+  font-family: $secondary-font;
+  color: #2196f3;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.logo-font-white-theme {
+  color: $main-font-color;
+}
+.logo-wraper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  &:hover .icon-close,
+  &:hover .icon-menu &:focus .icon-close,
+  &:focus .icon-menu {
+    fill: $link-color;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu .icon-close {
+  display: none;
+}
+.menu.is-open .icon-close {
+  display: block;
+}
+.menu.is-open .icon-menu {
+  display: none;
+}

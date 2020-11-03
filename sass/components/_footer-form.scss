@@ -1,0 +1,74 @@
+.footer-form {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  // height: 86px;
+  // width: 570px;
+  // margin-left: 93px;
+}
+.sign {
+  margin-bottom: 20px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $font-on-dakr-theme;
+}
+.form-sign {
+  display: block;
+  text-align: -webkit-center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.input-sign {
+  position: relative;
+  // margin-right: 12px;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+.input-sign:focus {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-sign {
+  display: flex;
+  align-items: center;
+  color: $font-on-dakr-theme;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  background-color: $link-color;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.text-btn {
+  padding-left: 29px;
+  margin-right: 10px;
+}
+
+.btn-svg-icon {
+  fill: $font-on-dakr-theme;
+}
