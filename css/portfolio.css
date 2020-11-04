@@ -183,6 +183,7 @@ ul,
 
 @media screen and (min-width: 768px) {
   .container-header {
+    padding: 0;
     display: flex;
     justify-content: center;
   }
@@ -331,6 +332,12 @@ ul,
   }
 }
 
+@media screen and (min-width: 768px) {
+  .nav-list {
+    position: relative;
+  }
+}
+
 .navigation .link.current {
   color: #2196f3;
 }
@@ -352,8 +359,10 @@ ul,
   }
 }
 
-.current {
-  position: relative;
+@media screen and (max-width: 480px) {
+  .current {
+    position: relative;
+  }
 }
 
 .current::after {
@@ -366,6 +375,12 @@ ul,
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .current::after {
+    bottom: 0;
+  }
 }
 
 .address {

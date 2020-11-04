@@ -52,6 +52,9 @@
       margin-right: 50px;
     }
   }
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
 }
 .navigation .link.current {
   color: $link-color;
@@ -71,7 +74,9 @@
 }
 
 .current {
-  position: relative;
+  @media screen and (max-width: 480px) {
+    position: relative;
+  }
 }
 .current::after {
   position: absolute;
@@ -83,4 +88,7 @@
   height: 4px;
   background: $link-color;
   border-radius: 2px;
+  @media screen and (min-width: 768px) {
+    bottom: 0;
+  }
 }
