@@ -7,6 +7,7 @@
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
+  min-width: 320px;
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -16,6 +17,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
+  min-width: 320px;
   @media screen and (min-width: 480px) {
     width: 480px;
   }
