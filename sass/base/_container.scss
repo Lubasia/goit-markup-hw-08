@@ -1,23 +1,24 @@
 .header {
   position: relative;
   border-bottom: 1px solid #ececec;
+  @media screen and (max-width: 767px) {
+    padding: 16px 0;
+  }
 }
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 0 15px;
-  min-width: 320px;
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -30,11 +31,7 @@
   }
 }
 .container-header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-
   @media screen and (min-width: 768px) {
-    padding: 0;
     display: flex;
     justify-content: center;
   }
